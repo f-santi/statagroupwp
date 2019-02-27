@@ -1,0 +1,92 @@
+% Add the option "draft" if needed
+\documentclass{statagroupwp}
+
+\usepackage{lipsum}
+
+\title{Long title of the paper}
+\journal{GOFCP 2019}
+\author{Given Name}{Family Name}{Department of xxx, University of xxx}
+\author[*]{Given Name}{Family Name}{Department of xxx, University of xxx}
+\author{Given Name}{Family Name}{Department of xxx, University of xxx}
+\corrauthor{Name; Address; e-mail: \url{name.surname@university.edu}}
+\date{\today}
+
+
+% Users declarations and packages should be added here
+% -- keep them at a minimum, please --
+
+\DeclareMathOperator{\spazio}{\mathcal{S}}
+
+
+
+% DOCUMENT
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\lipsum[1]
+
+\keywords{aksa, sakl, askl, askl}
+\end{abstract}
+
+\section{Introductory text}
+
+\lipsum[1-2]
+
+\section{Math}
+
+The following math operators are available to the user.
+
+Set of numbers (natural, integer, rational, real, complex):
+\[
+\Natural, \Integer, \Rational, \Real, \Complex\,.
+\]
+
+Statistical operators (expected value, variance, covariance, correlation):
+\[
+\E, \Var, \cov, \cor
+\]
+
+Probability distributions (binomial, Poisson, normal):
+\[
+\Binom, \Poi, \norm,
+\]
+
+Other operators and symbols (big O, define, likelihood function, log-likelihood function, small o, trace of a matric, absolute value, norm, constant $\eu=2.71828\dots$, differential, imaginary unit, indicator function, inverse of a matrix, probability measure, transpose, conjugate transpose):
+\[
+\bigO, \define, \Lik, \logLik, \smallo, \trace, \abs{\cdot}, \norma{\cdot},
+\eu, \diff, \iu, \ind, \inv, \Pr, \T, \HH
+\]
+
+System of equations:
+\[
+\begin{sistema}
+ax+by+c =0\\
+a'x+b'y+c'=0
+\end{sistema}
+\]
+
+\noindent\textbf{\em User-defined operators, commands and environments should be avoided, if not necessary.}
+
+
+\begin{figure}[t]
+\centering
+\includegraphics[scale = 0.7]{figures/EWMA}
+\caption{aklnsal sa}
+\label{fig:coord_y}
+\end{figure}
+
+\input{tables/regression}
+
+\section{Bibliography}
+
+
+Text citation \cite{gelfand2003}, parenthesis \citep{gelfand2003} citation.
+
+
+
+\bibliography{biblio}
+
+\end{document}
