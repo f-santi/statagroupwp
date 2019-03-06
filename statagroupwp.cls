@@ -132,8 +132,9 @@
     
     \noindent\textbf{Abstract.}
   }
- {
-  \begin{nolinenumbers}
+  {
+   \begin{nolinenumbers}
+    
     \ifdraft
       \vskip-1em
     \else
@@ -143,7 +144,7 @@
     
     \begin{flushright}
     \ifdraft
-      \vskip-1.8em
+      \vskip-1.65em
     \else
       \vskip-1.4em
     \fi
@@ -151,7 +152,7 @@
     Version: \@date
     \end{flushright}
     \vspace{2em}
-    \end{nolinenumbers}
+  \end{nolinenumbers}
  \endlist}
 
 % Heaters and footers
