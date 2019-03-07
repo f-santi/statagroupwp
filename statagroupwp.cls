@@ -45,6 +45,7 @@
 % Packages
 \RequirePackage[T1]{fontenc}     %
 \RequirePackage[utf8]{inputenc}  %
+\RequirePackage{lmodern}
 \RequirePackage[british]{babel}  %
 \RequirePackage{microtype}       %
 \RequirePackage{siunitx}         %
