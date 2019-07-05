@@ -10,7 +10,7 @@
 %
 %
 %
-%  Version:     1.0.0                        Date:        27.02.2019
+%  Version:     1.0.1                        Date:        05.07.2019
 %
 %  Repository:  https://github.com/f-santi/statagroupwp 
 % ====================================================================
@@ -45,12 +45,12 @@
 % Packages
 \RequirePackage[T1]{fontenc}     %
 \RequirePackage[utf8]{inputenc}  %
-\RequirePackage{lmodern}
+\RequirePackage{lmodern}         %
 \RequirePackage[british]{babel}  %
 \RequirePackage{microtype}       %
 \RequirePackage{siunitx}         %
 \RequirePackage{booktabs}
-\RequirePackage{graphicx}        %
+\RequirePackage[final]{graphicx} %
 \RequirePackage[labelfont={bf},font=small]{caption}
 \RequirePackage{hyperref}        %
 \RequirePackage{enumitem}        %
@@ -85,6 +85,15 @@
 \newcommand{\bloccoautori}{}
 \newcommand{\@corrauthor}{0}
 \newcommand{\corrauthor}[1]{\renewcommand\@corrauthor{#1}}
+
+% Annotazione
+%\usepackage[symbol]{footmisc}
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+%\footnote[num]{text}
+%
+%\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+%\renewcommand*{\thefootnote}{\arabic{footnote}}
+%\setcounter{footnote}{0}
 
 % Author info
 \renewcommand{\author}[4][0]{
