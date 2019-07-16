@@ -10,7 +10,7 @@
 %
 %
 %
-%  Version:     1.0.1                        Date:        05.07.2019
+%  Version:     1.0.2                        Date:        16.07.2019
 %
 %  Repository:  https://github.com/f-santi/statagroupwp 
 % ====================================================================
@@ -123,7 +123,7 @@
   \vskip 1.5em
   \ifblind\else{\small \bloccoautori \par}\fi
   \end{minipage}
-  \ifthenelse{\equal{\@corrauthor}{0}}{}{\footnotetext{\@corrauthor}}
+  \ifblind\else\ifthenelse{\equal{\@corrauthor}{0}}{}{\footnotetext{\@corrauthor}}\fi
   \vskip 1em \par
 \ifdraft  
   \linenumbers
